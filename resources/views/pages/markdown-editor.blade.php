@@ -16,6 +16,7 @@
                 <button class="text-button" type="button" data-action="insertLink">@icon('link'){{ trans('entities.pages_md_insert_link') }}</button>
                 <span class="mx-xs text-muted">|</span>
                 <button class="text-button" type="button" data-action="fullscreen">@icon('fullscreen'){{ trans('common.fullscreen') }}</button>
+                <button class="text-button" type="button" data-action="mdHelp">@icon('text-fields'){{ trans('entities.pages_md_help') }}</button>
             </div>
         </div>
 

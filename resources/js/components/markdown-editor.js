@@ -77,6 +77,7 @@ class MarkdownEditor {
             }
             if (action === 'insertDrawing') this.actionStartDrawing();
             if (action === 'fullscreen') this.actionFullScreen();
+            if (action === 'mdHelp') this.actionOpenMdHelp();
         });
 
         // Mobile section toggling
@@ -486,6 +487,10 @@ class MarkdownEditor {
         const alreadyFullscreen = this.elem.classList.contains('fullscreen');
         this.elem.classList.toggle('fullscreen', !alreadyFullscreen);
         document.body.classList.toggle('markdown-fullscreen', !alreadyFullscreen);
+    }
+
+    actionOpenMdHelp() {
+        window.open('https://commonmark.org/help/', '_blank');
     }
 
     // Scroll to a specified text
